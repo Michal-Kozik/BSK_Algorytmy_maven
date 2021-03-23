@@ -4,14 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int k = 3;
+        int d = 5;
         String word = "CRYPTOGRAPHY";
+        int [] key = {3, 4, 1, 5, 2};
 
-        RailFence railFence = new RailFence();
-        String codedMessage = railFence.code(word, k);
-        System.out.println(codedMessage);
-        String decodedMessage = railFence.decode(codedMessage, k);
-        System.out.println(decodedMessage);
+        MatrixCipherA matrixCipherA = new MatrixCipherA();
+        String encodedWord = matrixCipherA.encode(word, d, key);
+        System.out.println(encodedWord);
     }
 
     public static double max(double a, double b) {
