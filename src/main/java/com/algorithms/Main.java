@@ -6,10 +6,13 @@ public class Main {
 
         String word = "HEREISASECRETMESSAGEENCIPHEREDBYTRANSPOSITION";   // slowo.
         String key = "CONVENIENCE";   // klucz.
-        String word2 = "HECRNCEYIISEPSGDIRNTOAAESRMPNSSROEEBTETIAEEHS";
+        String word2 = "HEESPNIRRSSEESEIYASCBTEMGEPNANDICTRTAHSOIEERO";
 
         MatrixCipherC matrixCipherC = new MatrixCipherC();
-        matrixCipherC.encode(word, key);
+        String word3 = matrixCipherC.encode(word, key);
+        System.out.println(word3);
+        String word4 = matrixCipherC.decode(word3, key);
+        System.out.println(word4);
 
     }
 
