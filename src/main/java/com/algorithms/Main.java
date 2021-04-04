@@ -6,10 +6,13 @@ public class Main {
 
         String word = "CRYPTOGRAPHY";   // slowo.
         String key = "BREAK";   // klucz.
-        String word2 = "HEESPNIRRSSEESEIYASCBTEMGEPNANDICTRTAHSOIEERO";
+        String word2 = "DICPDPXVAZIP";
 
         VigenereCipher vigenereCipher = new VigenereCipher();
-        vigenereCipher.encode(word, key);
+        String word3 = vigenereCipher.encode(word, key);
+        System.out.println(word3);
+        String word4 = vigenereCipher.decode(word3, key);
+        System.out.println(word4);
 
     }
 
