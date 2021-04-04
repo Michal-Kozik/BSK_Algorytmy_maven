@@ -8,11 +8,9 @@ public class Main {
         String key = "CONVENIENCE";   // klucz.
         String word2 = "HECRNCEYIISEPSGDIRNTOAAESRMPNSSROEEBTETIAEEHS";
 
-        MatrixCipherB matrixCipherB = new MatrixCipherB();
-        String encodedWord = matrixCipherB.encode(word, key);
-        System.out.println(encodedWord);
-        String decodedWord = matrixCipherB.decode(word2, key);
-        System.out.println(decodedWord);
+        MatrixCipherC matrixCipherC = new MatrixCipherC();
+        matrixCipherC.encode(word, key);
+
     }
 
     public static double max(double a, double b) {
