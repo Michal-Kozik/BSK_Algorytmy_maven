@@ -6,10 +6,13 @@ public class Main {
 
         String word = "CRYPTOGRAPHY";   // slowo.
         String key = "BREAK";   // klucz.
-        String word2 = "DICPDPXVAZIP";
+        String word2 = "ABECADLO";
 
         CaesarCipherB caesarCipherB = new CaesarCipherB();
-        caesarCipherB.encode(word, 7, 5, 26);
+        String word3 = caesarCipherB.encode(word, 7, 5, 26);
+        System.out.println(word3);
+        String word4 = caesarCipherB.decode(word3, 7, 5, 26);
+        System.out.println(word4);
 
     }
 
