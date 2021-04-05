@@ -8,11 +8,8 @@ public class Main {
         String key = "BREAK";   // klucz.
         String word2 = "DICPDPXVAZIP";
 
-        VigenereCipher vigenereCipher = new VigenereCipher();
-        String word3 = vigenereCipher.encode(word, key);
-        System.out.println(word3);
-        String word4 = vigenereCipher.decode(word3, key);
-        System.out.println(word4);
+        CaesarCipherB caesarCipherB = new CaesarCipherB();
+        caesarCipherB.encode(word, 7, 5, 26);
 
     }
 
