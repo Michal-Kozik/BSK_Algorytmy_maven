@@ -2,7 +2,7 @@ package com.algorithms;
 
 public class RailFence {
 
-    public String code(String word, int key) {
+    public String encode(String word, int key) {
         char[][] fence = new char[word.length()][key];
         boolean down = false;
         int row = 0;
