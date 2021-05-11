@@ -61,14 +61,6 @@ public class MatrixCipherC {
             }
         }
 
-//        // Wyswietlenie macierzy
-//        for (int i = 0; i < rows; i++) {
-//            for (int j = 0; j < cols; j++) {
-//                System.out.print(matrix[i][j]);
-//            }
-//            System.out.println();
-//        }
-//        System.out.println(result);
         return result;
     }
 
@@ -138,14 +130,6 @@ public class MatrixCipherC {
             }
         }
 
-//        // Wyswietlenie macierzy
-//        for (int i = 0; i < rows; i++) {
-//            for (int j = 0; j < cols; j++) {
-//                System.out.print(matrix[i][j]);
-//            }
-//            System.out.println();
-//        }
-//        System.out.println(result);
         return result;
     }
 }

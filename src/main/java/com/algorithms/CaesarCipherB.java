@@ -10,11 +10,6 @@ public class CaesarCipherB {
 
     private char decodeLetter(char letter, int c, int b, int n) {
         int letterCode = letter - 65;
-//        if (letterCode < b) {
-//            System.out.println(letterCode - b);
-//            System.out.println(c * (letterCode - b));
-//            System.out.println((c * (letterCode - b)) % n);
-//        }
         int oldLetter = (c * (letterCode - b)) % n;
         if (oldLetter < 0) {
             oldLetter = n - Math.abs(oldLetter);
@@ -22,7 +17,7 @@ public class CaesarCipherB {
         return (char)(oldLetter + 65);
     }
 
-    // Znalezienie odwrotnosci modularna A (mod N) = i.
+    // Znalezienie odwrotnosci modularnej A (mod N) -> i.
     private int reverseModulo(int a, int n) {
         for (int i = 0; i < n; i++) {
             if (a*i % n == 1) {

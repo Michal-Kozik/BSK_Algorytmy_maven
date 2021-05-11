@@ -40,14 +40,6 @@ public class VigenereCipher {
             result += matrix[ letterToIndex(key.charAt(i)) ][ letterToIndex(word.charAt(i)) ];
         }
 
-//        // Wyswietlenie macierzy
-//        for (int i = 0; i < 26; i++) {
-//            for (int j = 0; j < 26; j++) {
-//                System.out.print(matrix[i][j]);
-//            }
-//            System.out.println();
-//        }
-//        System.out.println(result);
         return result;
     }
 

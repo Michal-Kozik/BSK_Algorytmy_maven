@@ -62,8 +62,8 @@ public class RailFence {
         // Zastapienie gwiazdek literami.
         for (int j = 0; j < key; j++) {
             for (int i = 0; i < word.length(); i++) {
-                // Podmienianie gwiazdek na litery z szyfru idac od gory do dolu
-                // z lewej do prawej.
+                // Podmienianie gwiazdek na litery z szyfru idac od lewej do prawej
+                // zaczynajac od gory.
                 if (fence[i][j] == '*') {
                     fence[i][j] = word.charAt(counter);
                     counter++;
